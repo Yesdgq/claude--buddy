@@ -17,6 +17,9 @@
 
 ## 通过 npm 安装
 
+### npm主页
+[npm主页](https://www.npmjs.com/package/@yesdgq/claude-buddy)
+
 ### 安装包
 ```bash
 npm install -g @yesdgq/claude-buddy -f
