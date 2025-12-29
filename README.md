@@ -15,10 +15,8 @@
   <img src="https://i.postimg.cc/1tcCx7bb/Screen-Shot-2025-12-24-164021-347.png" alt="MIT License">
 </center>
 
-## 通过 npm 安装
 
-### npm主页
-[npm主页](https://www.npmjs.com/package/@yesdgq/claude-buddy)
+## 通过 npm 安装
 
 ### 安装包
 ```bash
@@ -86,5 +84,36 @@ claude -v
 
 
 
+## 使用问题
+
+首次配置后使用claude code若仍提示登录，或有如下异常提示等：
+```ruby
+Unable to connect to Anthropic services
+Failed to connect to api.anthropic.com: ERR_BAD_REQUEST
+Please check your internet connection and network settings.
+```
+
+可临时在终端设置环境变量运行一次：
+```bash
+# Mac OS使用如下命令：
+export ANTHROPIC_BASE_URL=your_api_url
+export ANTHROPIC_AUTH_TOKEN=your_api_token
+claude
+
+#Windows使用如下命令：
+set ANTHROPIC_BASE_URL=your_api_url
+set ANTHROPIC_AUTH_TOKEN=our_api_token
+claude
+
+之后即可使用ccby config管理你的配置了。
+
+```
+
+
+
 ## 许可证
+
 MIT
+
+
+
