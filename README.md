@@ -96,13 +96,13 @@ Please check your internet connection and network settings.
 可临时在终端设置环境变量运行一次：
 ```bash
 # Mac OS使用如下命令：
-export ANTHROPIC_BASE_URL=your_api_url
+export ANTHROPIC_BASE_URL=https://your-custom-api-endpoint.com
 export ANTHROPIC_AUTH_TOKEN=your_api_token
 claude
 
 #Windows使用如下命令：
-set ANTHROPIC_BASE_URL=your_api_url
-set ANTHROPIC_AUTH_TOKEN=our_api_token
+set ANTHROPIC_BASE_URL=https://your-custom-api-endpoint.com
+set ANTHROPIC_AUTH_TOKEN=your_api_token
 claude
 
 之后即可使用ccby config管理你的配置了。
