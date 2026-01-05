@@ -1,18 +1,17 @@
 # Claude Buddy
 
-> Claude Code 开发的得力助手
+> Claude Buddy 是一款简单易用的 CLI 工具，通过可视化方式快速配置 Claude Code、Codex 和 Gemini 等CLI的API密钥、模型映射等信息，可极大的方便和简化您对Claude Code等CLI的使用。
 >
-> Claude Buddy 是一个强大的 CLI 工具，通过以下功能简化你的 Claude Code 工作流程：
->
-> - **API 密钥管理**：轻松存储、切换和管理多个 Claude API 密钥
-> - **模型映射**：便捷地自定义和管理模型配置
-> - **快速配置**：通过直观的命令，几秒钟即可完成设置
-> - **开发者友好**：专为专注于编码的开发者打造
 
+ - **API 密钥管理**：轻松存储、切换和管理多组API 密钥
+ - **模型映射**：便捷地自定义和管理模型配置
+ - **一次安装永久使用**：本地部署，安装后可长久使用
+ - **快速配置**：可视化界面，几秒钟即可完成设置
+ - **开发者友好**：专为专注于编码的开发者打造
 
 
 <center>
-  <img src="https://i.postimg.cc/1tcCx7bb/Screen-Shot-2025-12-24-164021-347.png" alt="MIT License">
+  <img src="https://i.postimg.cc/9FhKSBXh/Screen-Shot-2026-01-05-094110-369.png" alt="MIT License">
 </center>
 
 
@@ -41,9 +40,9 @@ npm uninstall -g @yesdgq/claude-buddy
 ## 配置
 
 
-### Web 配置界面
+### 可视化配置界面
 
-使用以下命令启动配置管理界面：
+使用以下命令启动可视化配置管理界面：
 
 ```bash
 ccby config
@@ -53,7 +52,6 @@ ccby config
 
 ## 使用方法
 
-### 基本使用
 
 ```bash
 # 打开配置页面，配置您的 API 地址和访问令牌(TOKEN)
@@ -61,9 +59,6 @@ ccby config
 
 # 启动claude code
 ccby 或 claude
-
-# 在指定目录中工作
-ccby /path/to/project
 
 # 查看历史会话
 ccby -r
@@ -73,19 +68,20 @@ ccby -c
 
 # 查看Claude-Buddy版本
 ccby --version
-ccby -v
 
 # 查看Claude版本
 claude --version
-claude -v
-```
 
+```
 其它更多方法，可参考 ：[claude code 使用文档](https://code.claude.com/docs/zh-CN/slash-commands)
+
+
 
 
 
 ## 使用问题
 
+### Claude Code首次使用问题
 首次配置后使用claude code若仍提示登录，或有如下异常提示等：
 ```ruby
 Unable to connect to Anthropic services
