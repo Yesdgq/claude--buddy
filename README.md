@@ -1,35 +1,60 @@
 # Claude Buddy
 
-> Claude Buddy 是一款简单易用的 CLI 工具，通过可视化方式快速配置 Claude Code、Codex 和 Gemini 等CLI的API密钥、模型映射等信息，可极大的方便和简化您对Claude Code等CLI的使用。
->
+[English](README.md) | [中文](README_zh.md)
 
- - **API 密钥管理**：轻松存储、切换和管理多组API 密钥
- - **模型映射**：便捷地自定义和管理模型配置
- - **一次安装永久使用**：本地部署，安装后可长久使用
- - **快速配置**：可视化界面，几秒钟即可完成设置
- - **开发者友好**：专为专注于编码的开发者打造
+
+
+## Overview
+
+Claude Buddy is a simple and easy-to-use CLI tool that provides a visual way to quickly configure API keys, model mappings, and other settings for CLI tools like Claude Code, Codex, and Gemini. It greatly facilitates and simplifies your use of Claude Code and other CLIs.
+
+
+
+## Features
+
+ - **API Key Management**: Easily store, switch, and manage multiple API keys
+ - **Model Mapping**: Conveniently customize and manage model configurations
+ - **Install Once, Use Forever**: Local deployment, long-term use after installation
+ - **Quick Configuration**: Visual interface, complete setup in seconds
+ - **Developer-Friendly**: Built for developers focused on coding
+
+
+
+## npm Homepage
+
+[npm Homepage](https://www.npmjs.com/package/@yesdgq/claude-buddy)
+
+
+
+## Screenshot
 
 
 <center>
-  <img src="https://i.postimg.cc/9FhKSBXh/Screen-Shot-2026-01-05-094110-369.png" alt="MIT License">
+  <img src="https://i.postimg.cc/kXV5DcLt/Screen-Shot-2026-01-22-094423-493.png" alt="Claude Buddy Interface">
 </center>
 
 
-## 通过 npm 安装
+## Prerequisites
 
-### 安装包
+- Node.js >= 18.0.0
+
+
+
+## Installation
+
+### Install Package
 ```bash
 npm install -g @yesdgq/claude-buddy -f
 ```
 
-### 更新包
+### Update Package
 
 ```bash
-npm update -g @yesdgq/claude-buddy 
+npm update -g @yesdgq/claude-buddy
 npm install -g @yesdgq/claude-buddy@latest
 ```
 
-### 删除包
+### Uninstall Package
 
 ```bash
 npm uninstall -g @yesdgq/claude-buddy
@@ -37,12 +62,12 @@ npm uninstall -g @yesdgq/claude-buddy
 
 
 
-## 配置
+## Configuration
 
 
-### 可视化配置界面
+### Visual Configuration Interface
 
-使用以下命令启动可视化配置管理界面：
+Use the following command to launch the visual configuration management interface:
 
 ```bash
 ccby config
@@ -50,64 +75,65 @@ ccby config
 
 
 
-## 使用方法
+## Available Commands
 
 
 ```bash
-# 打开配置页面，配置您的 API 地址和访问令牌(TOKEN)
+# Open the configuration page to configure your API endpoint and access token
 ccby config
 
-# 启动claude code
-ccby 或 claude
+# Start claude code
+ccby or claude
 
-# 查看历史会话
+# View history sessions
 ccby -r
 
-# 继续上次会话
-ccby -c 
+# Resume last session
+ccby -c
 
-# 查看Claude-Buddy版本
+# View Claude-Buddy version
 ccby --version
 
-# 查看Claude版本
+# View Claude version
 claude --version
 
 ```
-其它更多方法，可参考 ：[claude code 使用文档](https://code.claude.com/docs/zh-CN/slash-commands)
+For more usage methods, please refer to: [Claude Code Documentation](https://code.claude.com/docs/zh-CN/slash-commands)
+
+> [!IMPORTANT]
+> **Configuration Notice**: After switching or updating configurations, you need to restart Claude Code (CLI tool) for changes to take effect.
 
 
 
+## Troubleshooting
 
-
-## 使用问题
-
-### Claude Code首次使用问题
-首次配置后使用claude code若仍提示登录，或有如下异常提示等：
+### First-time Claude Code Issues
+If you are still prompted to log in when using Claude Code for the first time after configuration, or if you see the following error message:
 ```ruby
 Unable to connect to Anthropic services
 Failed to connect to api.anthropic.com: ERR_BAD_REQUEST
 Please check your internet connection and network settings.
 ```
 
-可临时在终端设置环境变量运行一次：
+You can temporarily set environment variables in the terminal and run once:
 ```bash
-# Mac OS使用如下命令：
+# For Mac OS, use the following commands:
 export ANTHROPIC_BASE_URL=https://your-custom-api-endpoint.com
 export ANTHROPIC_AUTH_TOKEN=your_api_token
 claude
 
-#Windows使用如下命令：
+# For Windows, use the following commands:
 set ANTHROPIC_BASE_URL=https://your-custom-api-endpoint.com
 set ANTHROPIC_AUTH_TOKEN=your_api_token
 claude
 
-之后即可使用ccby config管理你的配置了。
+After that, you can use ccby config to manage your configuration.
 
 ```
 
 
 
-## 许可证
+## License
 
 MIT
 
