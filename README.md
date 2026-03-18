@@ -1,6 +1,6 @@
 # Claude Buddy
 
-[English](README.md) | [中文](README_zh.md)
+[English](https://github.com/Yesdgq/claude--buddy/blob/main/README.md) | [中文](https://github.com/Yesdgq/claude--buddy/blob/main/README_zh.md)
 
 
 
@@ -29,9 +29,10 @@ Claude Buddy is a simple and easy-to-use CLI tool that provides a visual way to 
 ## Screenshot
 
 
-<center>
-  <img src="https://i.postimg.cc/kXV5DcLt/Screen-Shot-2026-01-22-094423-493.png" alt="Claude Buddy Interface">
-</center>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+  <img src="https://i.postimg.cc/76ss68sL/Screen-Shot-2026-03-18-095002-643.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
+  <img src="https://i.postimg.cc/HkdhB2yd/Screen-Shot-2026-03-18-095041-515.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
+</div>
 
 
 ## Prerequisites
