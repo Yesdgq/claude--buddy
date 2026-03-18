@@ -27,9 +27,10 @@ Claude Buddy 是一款简单易用的 CLI 工具，通过可视化方式快速�
 
 ## 截图
 
-<center>
-  <img src="https://i.postimg.cc/Xv6qRCHc/Screen-Shot-2026-01-22-094205-987.png" alt="MIT License">
-</center>
+<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+  <img src="https://i.postimg.cc/76ss68sL/Screen-Shot-2026-03-18-095002-643.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
+  <img src="https://i.postimg.cc/HkdhB2yd/Screen-Shot-2026-03-18-095041-515.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
+</div>
 
 
 ## 前提条件
