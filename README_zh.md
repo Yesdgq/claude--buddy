@@ -1,4 +1,3 @@
-
 # Claude Buddy
 
 [English](README.md) | [中文](README_zh.md)
@@ -27,10 +26,7 @@ Claude Buddy 是一款简单易用的 CLI 工具，通过可视化方式快速�
 
 ## 截图
 
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-  <img src="https://i.postimg.cc/76ss68sL/Screen-Shot-2026-03-18-095002-643.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
-  <img src="https://i.postimg.cc/HkdhB2yd/Screen-Shot-2026-03-18-095041-515.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
-</div>
+[![Screen-Shot-2026-10-20-094257-244.png](https://i.postimg.cc/FRHLMXCY/Screen-Shot-2026-10-20-094257-244.png)](https://postimg.cc/qtWqKSTr)
 
 
 ## 前提条件
@@ -38,9 +34,11 @@ Claude Buddy 是一款简单易用的 CLI 工具，通过可视化方式快速�
 - Node.js >= 18.0.0
 
   
+
 ## 安装
 
 ### 安装包
+
 ```bash
 npm install -g @yesdgq/claude-buddy -f
 ```
@@ -81,21 +79,27 @@ ccby config
 ccby config
 
 # 启动claude code
-ccby 或 claude
+ccby
+claude
 
 # 查看历史会话
 ccby -r
+claude -r
 
 # 继续上次会话
 ccby -c
+claude -c
 
 # 查看Claude-Buddy版本
+ccby -v
 ccby --version
 
 # 查看Claude版本
+claude -v
 claude --version
 
 ```
+
 其它更多方法，可参考 ：[claude code 使用文档](https://code.claude.com/docs/zh-CN/slash-commands)
 
 > [!IMPORTANT]
@@ -106,7 +110,9 @@ claude --version
 ## 使用问题
 
 ### Claude Code首次使用问题
+
 首次配置后使用claude code若仍提示登录，或有如下异常提示等：
+
 ```ruby
 Unable to connect to Anthropic services
 Failed to connect to api.anthropic.com: ERR_BAD_REQUEST
@@ -114,6 +120,7 @@ Please check your internet connection and network settings.
 ```
 
 可临时在终端设置环境变量运行一次：
+
 ```bash
 # Mac OS使用如下命令：
 export ANTHROPIC_BASE_URL=https://your-custom-api-endpoint.com
@@ -134,6 +141,3 @@ claude
 ## 许可证
 
 MIT
-
-
-
