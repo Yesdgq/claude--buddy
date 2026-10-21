@@ -28,12 +28,7 @@ Claude Buddy is a simple and easy-to-use CLI tool that provides a visual way to 
 
 ## Screenshot
 
-
-<div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-  <img src="https://i.postimg.cc/76ss68sL/Screen-Shot-2026-03-18-095002-643.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
-  <img src="https://i.postimg.cc/HkdhB2yd/Screen-Shot-2026-03-18-095041-515.png" alt="Claude Buddy Interface" style="max-width: 48%; height: auto;">
-</div>
-
+[![Screen-Shot-2026-10-20-094727-625.png](https://i.postimg.cc/J4VbhvGg/Screen-Shot-2026-10-20-094727-625.png)](https://postimg.cc/fkC32H7j)
 
 ## Prerequisites
 
@@ -44,6 +39,7 @@ Claude Buddy is a simple and easy-to-use CLI tool that provides a visual way to 
 ## Installation
 
 ### Install Package
+
 ```bash
 npm install -g @yesdgq/claude-buddy -f
 ```
@@ -84,21 +80,27 @@ ccby config
 ccby config
 
 # Start claude code
-ccby or claude
+ccby
+claude
 
 # View history sessions
 ccby -r
+claude -r
 
 # Resume last session
 ccby -c
+claude -c
 
 # View Claude-Buddy version
+ccby -v
 ccby --version
 
 # View Claude version
+claude -v
 claude --version
 
 ```
+
 For more usage methods, please refer to: [Claude Code Documentation](https://code.claude.com/docs/zh-CN/slash-commands)
 
 > [!IMPORTANT]
@@ -109,7 +111,9 @@ For more usage methods, please refer to: [Claude Code Documentation](https://cod
 ## Troubleshooting
 
 ### First-time Claude Code Issues
+
 If you are still prompted to log in when using Claude Code for the first time after configuration, or if you see the following error message:
+
 ```ruby
 Unable to connect to Anthropic services
 Failed to connect to api.anthropic.com: ERR_BAD_REQUEST
@@ -117,6 +121,7 @@ Please check your internet connection and network settings.
 ```
 
 You can temporarily set environment variables in the terminal and run once:
+
 ```bash
 # For Mac OS, use the following commands:
 export ANTHROPIC_BASE_URL=https://your-custom-api-endpoint.com
@@ -137,6 +142,3 @@ After that, you can use ccby config to manage your configuration.
 ## License
 
 MIT
-
-
-
